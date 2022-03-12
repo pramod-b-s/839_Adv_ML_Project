@@ -1,0 +1,4410 @@
+
+{
+  "schemaVersion": 1,
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025982214849, "dur": 377,
+    "args": {
+       "External id": 2,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 3672, "tid": 43344,
+    "ts": 1647025982220884, "dur": 75,
+    "args": {
+       "External id": 3,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zeros", "pid": 3672, "tid": 43344,
+    "ts": 1647025977863886, "dur": 4357342,
+    "args": {
+       "External id": 1,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025982222542, "dur": 22,
+    "args": {
+       "External id": 5,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025982240521, "dur": 2275,
+    "args": {
+       "External id": 10,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64, 3, 7, 7], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025982242821, "dur": 27,
+    "args": {
+       "External id": 11,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 3, 224, 224], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025984078606, "dur": 989,
+    "args": {
+       "External id": 12,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025982230485, "dur": 3765909,
+    "args": {
+       "External id": 9,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 3, 224, 224], [64, 3, 7, 7], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025982228645, "dur": 3768900,
+    "args": {
+       "External id": 8,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 3, 224, 224], [64, 3, 7, 7], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025982228106, "dur": 3769462,
+    "args": {
+       "External id": 7,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 3, 224, 224], [64, 3, 7, 7], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025982225963, "dur": 3771622,
+    "args": {
+       "External id": 6,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 3, 224, 224], [64, 3, 7, 7], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986013823, "dur": 14020,
+    "args": {
+       "External id": 13,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986062403, "dur": 380,
+    "args": {
+       "External id": 18,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986062036, "dur": 1181,
+    "args": {
+       "External id": 17,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986066663, "dur": 2434,
+    "args": {
+       "External id": 19,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986069126, "dur": 29,
+    "args": {
+       "External id": 20,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986069160, "dur": 197,
+    "args": {
+       "External id": 21,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986073530, "dur": 135,
+    "args": {
+       "External id": 22,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986073698, "dur": 34,
+    "args": {
+       "External id": 23,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986057014, "dur": 294857,
+    "args": {
+       "External id": 16,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986054271, "dur": 297641,
+    "args": {
+       "External id": 15,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986052229, "dur": 299698,
+    "args": {
+       "External id": 14,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986363421, "dur": 6078,
+    "args": {
+       "External id": 26,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [], [5, 64, 112, 112]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986362161, "dur": 7363,
+    "args": {
+       "External id": 25,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986358565, "dur": 11685,
+    "args": {
+       "External id": 24,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 2
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::max_pool2d_with_indices", "pid": 3672, "tid": 43344,
+    "ts": 1647025986378208, "dur": 6996,
+    "args": {
+       "External id": 28,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [], [], [], [], []], "Input type": ["float", "GenericList", "GenericList", "GenericList", "GenericList", "Bool"], "Fwd thread id": 0, "Sequence number": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::max_pool2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986375902, "dur": 9319,
+    "args": {
+       "External id": 27,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 112, 112], [], [], [], [], []], "Input type": ["float", "GenericList", "GenericList", "GenericList", "GenericList", "Bool"], "Fwd thread id": 0, "Sequence number": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986391384, "dur": 36,
+    "args": {
+       "External id": 33,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64, 64, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986391429, "dur": 15,
+    "args": {
+       "External id": 34,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986421267, "dur": 118,
+    "args": {
+       "External id": 35,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986390991, "dur": 30585,
+    "args": {
+       "External id": 32,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986390955, "dur": 30634,
+    "args": {
+       "External id": 31,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986390914, "dur": 30685,
+    "args": {
+       "External id": 30,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986390714, "dur": 30894,
+    "args": {
+       "External id": 29,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422335, "dur": 76,
+    "args": {
+       "External id": 36,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422565, "dur": 18,
+    "args": {
+       "External id": 41,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422551, "dur": 41,
+    "args": {
+       "External id": 40,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422608, "dur": 16,
+    "args": {
+       "External id": 42,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422630, "dur": 15,
+    "args": {
+       "External id": 43,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422649, "dur": 14,
+    "args": {
+       "External id": 44,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422669, "dur": 12,
+    "args": {
+       "External id": 45,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422685, "dur": 12,
+    "args": {
+       "External id": 46,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422517, "dur": 214,
+    "args": {
+       "External id": 39,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422501, "dur": 256,
+    "args": {
+       "External id": 38,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986422484, "dur": 284,
+    "args": {
+       "External id": 37,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423309, "dur": 122,
+    "args": {
+       "External id": 49,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [5, 64, 56, 56]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423296, "dur": 152,
+    "args": {
+       "External id": 48,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423253, "dur": 224,
+    "args": {
+       "External id": 47,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 6
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423723, "dur": 32,
+    "args": {
+       "External id": 54,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64, 64, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423765, "dur": 18,
+    "args": {
+       "External id": 55,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423807, "dur": 33,
+    "args": {
+       "External id": 56,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423637, "dur": 467,
+    "args": {
+       "External id": 53,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423594, "dur": 528,
+    "args": {
+       "External id": 52,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423572, "dur": 559,
+    "args": {
+       "External id": 51,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986423548, "dur": 589,
+    "args": {
+       "External id": 50,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424593, "dur": 65,
+    "args": {
+       "External id": 57,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424841, "dur": 20,
+    "args": {
+       "External id": 62,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424826, "dur": 44,
+    "args": {
+       "External id": 61,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424885, "dur": 14,
+    "args": {
+       "External id": 63,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424905, "dur": 15,
+    "args": {
+       "External id": 64,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424924, "dur": 14,
+    "args": {
+       "External id": 65,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424944, "dur": 12,
+    "args": {
+       "External id": 66,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424959, "dur": 11,
+    "args": {
+       "External id": 67,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424798, "dur": 206,
+    "args": {
+       "External id": 60,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424783, "dur": 251,
+    "args": {
+       "External id": 59,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986424732, "dur": 336,
+    "args": {
+       "External id": 58,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986427702, "dur": 2520,
+    "args": {
+       "External id": 68,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [5, 64, 56, 56], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 9
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430368, "dur": 39,
+    "args": {
+       "External id": 71,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [5, 64, 56, 56]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430348, "dur": 66,
+    "args": {
+       "External id": 70,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430315, "dur": 113,
+    "args": {
+       "External id": 69,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 10
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430617, "dur": 23,
+    "args": {
+       "External id": 76,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64, 64, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430647, "dur": 13,
+    "args": {
+       "External id": 77,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430685, "dur": 18,
+    "args": {
+       "External id": 78,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430536, "dur": 481,
+    "args": {
+       "External id": 75,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430514, "dur": 518,
+    "args": {
+       "External id": 74,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430498, "dur": 546,
+    "args": {
+       "External id": 73,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986430479, "dur": 575,
+    "args": {
+       "External id": 72,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431121, "dur": 52,
+    "args": {
+       "External id": 79,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431308, "dur": 455,
+    "args": {
+       "External id": 84,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431296, "dur": 481,
+    "args": {
+       "External id": 83,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431795, "dur": 20,
+    "args": {
+       "External id": 85,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431826, "dur": 27,
+    "args": {
+       "External id": 86,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431858, "dur": 19,
+    "args": {
+       "External id": 87,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431885, "dur": 15,
+    "args": {
+       "External id": 88,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431904, "dur": 50,
+    "args": {
+       "External id": 89,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431264, "dur": 762,
+    "args": {
+       "External id": 82,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431251, "dur": 789,
+    "args": {
+       "External id": 81,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986431237, "dur": 814,
+    "args": {
+       "External id": 80,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432128, "dur": 55,
+    "args": {
+       "External id": 92,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [5, 64, 56, 56]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432116, "dur": 109,
+    "args": {
+       "External id": 91,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432098, "dur": 143,
+    "args": {
+       "External id": 90,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 13
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432502, "dur": 27,
+    "args": {
+       "External id": 97,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64, 64, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432535, "dur": 16,
+    "args": {
+       "External id": 98,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432569, "dur": 56,
+    "args": {
+       "External id": 99,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432331, "dur": 513,
+    "args": {
+       "External id": 96,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432312, "dur": 575,
+    "args": {
+       "External id": 95,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432298, "dur": 603,
+    "args": {
+       "External id": 94,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432277, "dur": 637,
+    "args": {
+       "External id": 93,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986432961, "dur": 76,
+    "args": {
+       "External id": 100,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433383, "dur": 20,
+    "args": {
+       "External id": 105,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433372, "dur": 42,
+    "args": {
+       "External id": 104,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433426, "dur": 18,
+    "args": {
+       "External id": 106,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[64], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433449, "dur": 31,
+    "args": {
+       "External id": 107,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433483, "dur": 407,
+    "args": {
+       "External id": 108,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433902, "dur": 22,
+    "args": {
+       "External id": 109,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433928, "dur": 19,
+    "args": {
+       "External id": 110,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433339, "dur": 658,
+    "args": {
+       "External id": 103,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433323, "dur": 707,
+    "args": {
+       "External id": 102,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986433296, "dur": 750,
+    "args": {
+       "External id": 101,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986434065, "dur": 51,
+    "args": {
+       "External id": 111,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [5, 64, 56, 56], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 16
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986434175, "dur": 39,
+    "args": {
+       "External id": 114,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], [5, 64, 56, 56]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986434164, "dur": 76,
+    "args": {
+       "External id": 113,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986434144, "dur": 111,
+    "args": {
+       "External id": 112,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 17
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435447, "dur": 21,
+    "args": {
+       "External id": 119,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128, 64, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435479, "dur": 15,
+    "args": {
+       "External id": 120,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986464706, "dur": 133,
+    "args": {
+       "External id": 121,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435385, "dur": 30706,
+    "args": {
+       "External id": 118,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435360, "dur": 30771,
+    "args": {
+       "External id": 117,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435323, "dur": 30830,
+    "args": {
+       "External id": 116,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986435261, "dur": 30915,
+    "args": {
+       "External id": 115,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466249, "dur": 64,
+    "args": {
+       "External id": 122,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466508, "dur": 19,
+    "args": {
+       "External id": 127,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466495, "dur": 39,
+    "args": {
+       "External id": 126,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466573, "dur": 16,
+    "args": {
+       "External id": 128,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466594, "dur": 13,
+    "args": {
+       "External id": 129,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466611, "dur": 18,
+    "args": {
+       "External id": 130,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466643, "dur": 18,
+    "args": {
+       "External id": 131,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466666, "dur": 10,
+    "args": {
+       "External id": 132,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466461, "dur": 932,
+    "args": {
+       "External id": 125,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466403, "dur": 1013,
+    "args": {
+       "External id": 124,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986466385, "dur": 1047,
+    "args": {
+       "External id": 123,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467564, "dur": 57,
+    "args": {
+       "External id": 135,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [5, 128, 28, 28]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467547, "dur": 88,
+    "args": {
+       "External id": 134,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467514, "dur": 140,
+    "args": {
+       "External id": 133,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 20
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467779, "dur": 13,
+    "args": {
+       "External id": 140,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128, 128, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467796, "dur": 7,
+    "args": {
+       "External id": 141,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986482853, "dur": 365,
+    "args": {
+       "External id": 142,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467746, "dur": 15733,
+    "args": {
+       "External id": 139,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467732, "dur": 15771,
+    "args": {
+       "External id": 138,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467723, "dur": 15801,
+    "args": {
+       "External id": 137,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986467708, "dur": 15836,
+    "args": {
+       "External id": 136,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483616, "dur": 58,
+    "args": {
+       "External id": 143,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483899, "dur": 25,
+    "args": {
+       "External id": 148,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483882, "dur": 54,
+    "args": {
+       "External id": 147,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483956, "dur": 22,
+    "args": {
+       "External id": 149,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483987, "dur": 27,
+    "args": {
+       "External id": 150,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484020, "dur": 22,
+    "args": {
+       "External id": 151,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484051, "dur": 46,
+    "args": {
+       "External id": 152,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484104, "dur": 22,
+    "args": {
+       "External id": 153,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483842, "dur": 328,
+    "args": {
+       "External id": 146,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483823, "dur": 361,
+    "args": {
+       "External id": 145,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986483796, "dur": 400,
+    "args": {
+       "External id": 144,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484387, "dur": 21,
+    "args": {
+       "External id": 158,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128, 64, 1, 1], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484415, "dur": 18,
+    "args": {
+       "External id": 159,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986503772, "dur": 93,
+    "args": {
+       "External id": 160,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484324, "dur": 19694,
+    "args": {
+       "External id": 157,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484302, "dur": 19773,
+    "args": {
+       "External id": 156,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484279, "dur": 19805,
+    "args": {
+       "External id": 155,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986484258, "dur": 19834,
+    "args": {
+       "External id": 154,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 64, 56, 56], [128, 64, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505191, "dur": 94,
+    "args": {
+       "External id": 161,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505461, "dur": 34,
+    "args": {
+       "External id": 166,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505442, "dur": 67,
+    "args": {
+       "External id": 165,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505532, "dur": 23,
+    "args": {
+       "External id": 167,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505563, "dur": 18,
+    "args": {
+       "External id": 168,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505587, "dur": 19,
+    "args": {
+       "External id": 169,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505613, "dur": 14,
+    "args": {
+       "External id": 170,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505631, "dur": 16,
+    "args": {
+       "External id": 171,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505403, "dur": 295,
+    "args": {
+       "External id": 164,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505385, "dur": 324,
+    "args": {
+       "External id": 163,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505362, "dur": 357,
+    "args": {
+       "External id": 162,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505740, "dur": 42,
+    "args": {
+       "External id": 172,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [5, 128, 28, 28], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 25
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505858, "dur": 36,
+    "args": {
+       "External id": 175,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [5, 128, 28, 28]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505845, "dur": 61,
+    "args": {
+       "External id": 174,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986505823, "dur": 100,
+    "args": {
+       "External id": 173,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 26
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507398, "dur": 24,
+    "args": {
+       "External id": 180,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128, 128, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507431, "dur": 54,
+    "args": {
+       "External id": 181,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507518, "dur": 30,
+    "args": {
+       "External id": 182,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507277, "dur": 619,
+    "args": {
+       "External id": 179,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507253, "dur": 661,
+    "args": {
+       "External id": 178,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507226, "dur": 706,
+    "args": {
+       "External id": 177,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986507161, "dur": 785,
+    "args": {
+       "External id": 176,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508019, "dur": 128,
+    "args": {
+       "External id": 183,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508330, "dur": 25,
+    "args": {
+       "External id": 188,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508310, "dur": 56,
+    "args": {
+       "External id": 187,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508383, "dur": 19,
+    "args": {
+       "External id": 189,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508409, "dur": 19,
+    "args": {
+       "External id": 190,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508433, "dur": 18,
+    "args": {
+       "External id": 191,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508459, "dur": 15,
+    "args": {
+       "External id": 192,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508479, "dur": 15,
+    "args": {
+       "External id": 193,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508260, "dur": 272,
+    "args": {
+       "External id": 186,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508246, "dur": 301,
+    "args": {
+       "External id": 185,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508229, "dur": 330,
+    "args": {
+       "External id": 184,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508624, "dur": 36,
+    "args": {
+       "External id": 196,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [5, 128, 28, 28]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508613, "dur": 58,
+    "args": {
+       "External id": 195,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508593, "dur": 94,
+    "args": {
+       "External id": 194,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 29
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508806, "dur": 15,
+    "args": {
+       "External id": 201,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128, 128, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508826, "dur": 12,
+    "args": {
+       "External id": 202,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508856, "dur": 20,
+    "args": {
+       "External id": 203,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508775, "dur": 377,
+    "args": {
+       "External id": 200,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508759, "dur": 406,
+    "args": {
+       "External id": 199,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508747, "dur": 429,
+    "args": {
+       "External id": 198,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986508723, "dur": 464,
+    "args": {
+       "External id": 197,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509236, "dur": 95,
+    "args": {
+       "External id": 204,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509585, "dur": 20,
+    "args": {
+       "External id": 209,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509570, "dur": 47,
+    "args": {
+       "External id": 208,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509635, "dur": 22,
+    "args": {
+       "External id": 210,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[128], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509665, "dur": 19,
+    "args": {
+       "External id": 211,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509688, "dur": 20,
+    "args": {
+       "External id": 212,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509716, "dur": 16,
+    "args": {
+       "External id": 213,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509736, "dur": 15,
+    "args": {
+       "External id": 214,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509539, "dur": 303,
+    "args": {
+       "External id": 207,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509522, "dur": 333,
+    "args": {
+       "External id": 206,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509501, "dur": 466,
+    "args": {
+       "External id": 205,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986509993, "dur": 73,
+    "args": {
+       "External id": 215,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [5, 128, 28, 28], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 32
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510152, "dur": 42,
+    "args": {
+       "External id": 218,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], [5, 128, 28, 28]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510138, "dur": 65,
+    "args": {
+       "External id": 217,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510112, "dur": 106,
+    "args": {
+       "External id": 216,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 33
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510938, "dur": 90,
+    "args": {
+       "External id": 223,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256, 128, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986511039, "dur": 27,
+    "args": {
+       "External id": 224,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986516058, "dur": 62,
+    "args": {
+       "External id": 225,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510573, "dur": 10648,
+    "args": {
+       "External id": 222,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510547, "dur": 10693,
+    "args": {
+       "External id": 221,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510532, "dur": 10717,
+    "args": {
+       "External id": 220,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986510500, "dur": 10756,
+    "args": {
+       "External id": 219,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521334, "dur": 133,
+    "args": {
+       "External id": 226,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521589, "dur": 16,
+    "args": {
+       "External id": 231,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521579, "dur": 33,
+    "args": {
+       "External id": 230,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521630, "dur": 17,
+    "args": {
+       "External id": 232,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521654, "dur": 52,
+    "args": {
+       "External id": 233,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521718, "dur": 26,
+    "args": {
+       "External id": 234,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521759, "dur": 15,
+    "args": {
+       "External id": 235,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521778, "dur": 9,
+    "args": {
+       "External id": 236,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521554, "dur": 266,
+    "args": {
+       "External id": 229,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521543, "dur": 286,
+    "args": {
+       "External id": 228,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521532, "dur": 303,
+    "args": {
+       "External id": 227,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521924, "dur": 97,
+    "args": {
+       "External id": 239,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [5, 256, 14, 14]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521907, "dur": 122,
+    "args": {
+       "External id": 238,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986521870, "dur": 180,
+    "args": {
+       "External id": 237,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 36
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986523019, "dur": 50,
+    "args": {
+       "External id": 244,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256, 256, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986523214, "dur": 187,
+    "args": {
+       "External id": 245,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986525965, "dur": 176,
+    "args": {
+       "External id": 246,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986522152, "dur": 4330,
+    "args": {
+       "External id": 243,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986522133, "dur": 4372,
+    "args": {
+       "External id": 242,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986522120, "dur": 4416,
+    "args": {
+       "External id": 241,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986522102, "dur": 4454,
+    "args": {
+       "External id": 240,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986526669, "dur": 80,
+    "args": {
+       "External id": 247,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527491, "dur": 37,
+    "args": {
+       "External id": 252,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527457, "dur": 89,
+    "args": {
+       "External id": 251,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527615, "dur": 42,
+    "args": {
+       "External id": 253,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527674, "dur": 32,
+    "args": {
+       "External id": 254,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527712, "dur": 20,
+    "args": {
+       "External id": 255,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527739, "dur": 16,
+    "args": {
+       "External id": 256,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527759, "dur": 13,
+    "args": {
+       "External id": 257,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527140, "dur": 674,
+    "args": {
+       "External id": 250,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527019, "dur": 808,
+    "args": {
+       "External id": 249,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986526940, "dur": 899,
+    "args": {
+       "External id": 248,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986528512, "dur": 33,
+    "args": {
+       "External id": 262,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256, 128, 1, 1], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986528554, "dur": 20,
+    "args": {
+       "External id": 263,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986536916, "dur": 105,
+    "args": {
+       "External id": 264,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986528156, "dur": 9026,
+    "args": {
+       "External id": 261,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986528097, "dur": 9103,
+    "args": {
+       "External id": 260,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986528053, "dur": 9159,
+    "args": {
+       "External id": 259,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986527914, "dur": 9315,
+    "args": {
+       "External id": 258,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 128, 28, 28], [256, 128, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537331, "dur": 114,
+    "args": {
+       "External id": 265,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537638, "dur": 21,
+    "args": {
+       "External id": 270,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537616, "dur": 50,
+    "args": {
+       "External id": 269,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537680, "dur": 11,
+    "args": {
+       "External id": 271,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537695, "dur": 11,
+    "args": {
+       "External id": 272,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537711, "dur": 9,
+    "args": {
+       "External id": 273,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537728, "dur": 8,
+    "args": {
+       "External id": 274,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537739, "dur": 7,
+    "args": {
+       "External id": 275,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537570, "dur": 203,
+    "args": {
+       "External id": 268,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537556, "dur": 224,
+    "args": {
+       "External id": 267,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537531, "dur": 255,
+    "args": {
+       "External id": 266,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537800, "dur": 29,
+    "args": {
+       "External id": 276,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [5, 256, 14, 14], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 41
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537874, "dur": 22,
+    "args": {
+       "External id": 279,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [5, 256, 14, 14]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537868, "dur": 33,
+    "args": {
+       "External id": 278,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537855, "dur": 55,
+    "args": {
+       "External id": 277,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 42
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538100, "dur": 46,
+    "args": {
+       "External id": 284,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256, 256, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538157, "dur": 33,
+    "args": {
+       "External id": 285,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538251, "dur": 44,
+    "args": {
+       "External id": 286,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538038, "dur": 514,
+    "args": {
+       "External id": 283,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537986, "dur": 584,
+    "args": {
+       "External id": 282,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537977, "dur": 604,
+    "args": {
+       "External id": 281,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986537958, "dur": 634,
+    "args": {
+       "External id": 280,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538653, "dur": 68,
+    "args": {
+       "External id": 287,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538895, "dur": 300,
+    "args": {
+       "External id": 292,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538875, "dur": 343,
+    "args": {
+       "External id": 291,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986539239, "dur": 42,
+    "args": {
+       "External id": 293,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986539326, "dur": 1234,
+    "args": {
+       "External id": 294,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986540590, "dur": 33,
+    "args": {
+       "External id": 295,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986540634, "dur": 12,
+    "args": {
+       "External id": 296,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986540651, "dur": 41,
+    "args": {
+       "External id": 297,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538833, "dur": 2523,
+    "args": {
+       "External id": 290,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538815, "dur": 2659,
+    "args": {
+       "External id": 289,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986538795, "dur": 2808,
+    "args": {
+       "External id": 288,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542084, "dur": 69,
+    "args": {
+       "External id": 300,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [5, 256, 14, 14]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542055, "dur": 115,
+    "args": {
+       "External id": 299,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986541965, "dur": 281,
+    "args": {
+       "External id": 298,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 45
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542747, "dur": 120,
+    "args": {
+       "External id": 305,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256, 256, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542897, "dur": 73,
+    "args": {
+       "External id": 306,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986543035, "dur": 43,
+    "args": {
+       "External id": 307,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542571, "dur": 1188,
+    "args": {
+       "External id": 304,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542454, "dur": 1332,
+    "args": {
+       "External id": 303,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542404, "dur": 1430,
+    "args": {
+       "External id": 302,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986542352, "dur": 1528,
+    "args": {
+       "External id": 301,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544096, "dur": 181,
+    "args": {
+       "External id": 308,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544526, "dur": 587,
+    "args": {
+       "External id": 313,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544503, "dur": 653,
+    "args": {
+       "External id": 312,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545191, "dur": 46,
+    "args": {
+       "External id": 314,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[256], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545252, "dur": 47,
+    "args": {
+       "External id": 315,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545307, "dur": 44,
+    "args": {
+       "External id": 316,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545365, "dur": 30,
+    "args": {
+       "External id": 317,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545404, "dur": 37,
+    "args": {
+       "External id": 318,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544454, "dur": 1067,
+    "args": {
+       "External id": 311,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544427, "dur": 1117,
+    "args": {
+       "External id": 310,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986544398, "dur": 1163,
+    "args": {
+       "External id": 309,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545721, "dur": 61,
+    "args": {
+       "External id": 319,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [5, 256, 14, 14], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 48
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545845, "dur": 73,
+    "args": {
+       "External id": 322,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], [5, 256, 14, 14]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545837, "dur": 104,
+    "args": {
+       "External id": 321,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986545819, "dur": 152,
+    "args": {
+       "External id": 320,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 49
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546200, "dur": 17,
+    "args": {
+       "External id": 327,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512, 256, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546224, "dur": 12,
+    "args": {
+       "External id": 328,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986553142, "dur": 132,
+    "args": {
+       "External id": 329,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546164, "dur": 7595,
+    "args": {
+       "External id": 326,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546144, "dur": 7631,
+    "args": {
+       "External id": 325,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546130, "dur": 7654,
+    "args": {
+       "External id": 324,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986546103, "dur": 7696,
+    "args": {
+       "External id": 323,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986553875, "dur": 67,
+    "args": {
+       "External id": 330,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554096, "dur": 24,
+    "args": {
+       "External id": 335,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554081, "dur": 49,
+    "args": {
+       "External id": 334,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554147, "dur": 18,
+    "args": {
+       "External id": 336,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554172, "dur": 21,
+    "args": {
+       "External id": 337,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554198, "dur": 18,
+    "args": {
+       "External id": 338,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554226, "dur": 15,
+    "args": {
+       "External id": 339,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554245, "dur": 255,
+    "args": {
+       "External id": 340,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554045, "dur": 531,
+    "args": {
+       "External id": 333,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554028, "dur": 571,
+    "args": {
+       "External id": 332,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554011, "dur": 605,
+    "args": {
+       "External id": 331,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554971, "dur": 92,
+    "args": {
+       "External id": 343,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [5, 512, 7, 7]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554944, "dur": 139,
+    "args": {
+       "External id": 342,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986554836, "dur": 280,
+    "args": {
+       "External id": 341,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 52
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555498, "dur": 27,
+    "args": {
+       "External id": 348,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512, 512, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555531, "dur": 14,
+    "args": {
+       "External id": 349,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986560211, "dur": 440,
+    "args": {
+       "External id": 350,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555216, "dur": 5662,
+    "args": {
+       "External id": 347,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555198, "dur": 5706,
+    "args": {
+       "External id": 346,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555186, "dur": 5731,
+    "args": {
+       "External id": 345,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986555169, "dur": 5759,
+    "args": {
+       "External id": 344,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561039, "dur": 77,
+    "args": {
+       "External id": 351,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561244, "dur": 18,
+    "args": {
+       "External id": 356,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561235, "dur": 35,
+    "args": {
+       "External id": 355,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561284, "dur": 22,
+    "args": {
+       "External id": 357,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561311, "dur": 19,
+    "args": {
+       "External id": 358,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561335, "dur": 21,
+    "args": {
+       "External id": 359,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561369, "dur": 18,
+    "args": {
+       "External id": 360,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561391, "dur": 18,
+    "args": {
+       "External id": 361,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561209, "dur": 268,
+    "args": {
+       "External id": 354,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561195, "dur": 291,
+    "args": {
+       "External id": 353,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561180, "dur": 312,
+    "args": {
+       "External id": 352,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561586, "dur": 12,
+    "args": {
+       "External id": 366,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512, 256, 1, 1], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561601, "dur": 11,
+    "args": {
+       "External id": 367,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986563445, "dur": 121,
+    "args": {
+       "External id": 368,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561564, "dur": 2259,
+    "args": {
+       "External id": 365,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561551, "dur": 2290,
+    "args": {
+       "External id": 364,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561543, "dur": 2377,
+    "args": {
+       "External id": 363,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986561532, "dur": 2400,
+    "args": {
+       "External id": 362,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 256, 14, 14], [512, 256, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564001, "dur": 48,
+    "args": {
+       "External id": 369,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564174, "dur": 17,
+    "args": {
+       "External id": 374,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564163, "dur": 37,
+    "args": {
+       "External id": 373,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564214, "dur": 15,
+    "args": {
+       "External id": 375,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564235, "dur": 15,
+    "args": {
+       "External id": 376,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564254, "dur": 15,
+    "args": {
+       "External id": 377,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564275, "dur": 11,
+    "args": {
+       "External id": 378,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564289, "dur": 16,
+    "args": {
+       "External id": 379,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564136, "dur": 268,
+    "args": {
+       "External id": 372,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564122, "dur": 291,
+    "args": {
+       "External id": 371,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564109, "dur": 312,
+    "args": {
+       "External id": 370,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564436, "dur": 33,
+    "args": {
+       "External id": 380,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [5, 512, 7, 7], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 57
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564517, "dur": 24,
+    "args": {
+       "External id": 383,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [5, 512, 7, 7]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564509, "dur": 46,
+    "args": {
+       "External id": 382,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564493, "dur": 77,
+    "args": {
+       "External id": 381,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 58
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564688, "dur": 16,
+    "args": {
+       "External id": 388,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512, 512, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564709, "dur": 12,
+    "args": {
+       "External id": 389,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564737, "dur": 20,
+    "args": {
+       "External id": 390,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564663, "dur": 313,
+    "args": {
+       "External id": 387,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564647, "dur": 341,
+    "args": {
+       "External id": 386,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564632, "dur": 365,
+    "args": {
+       "External id": 385,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986564617, "dur": 388,
+    "args": {
+       "External id": 384,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565046, "dur": 72,
+    "args": {
+       "External id": 391,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565368, "dur": 326,
+    "args": {
+       "External id": 396,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565254, "dur": 464,
+    "args": {
+       "External id": 395,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565737, "dur": 39,
+    "args": {
+       "External id": 397,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565787, "dur": 53,
+    "args": {
+       "External id": 398,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565850, "dur": 30,
+    "args": {
+       "External id": 399,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565890, "dur": 47,
+    "args": {
+       "External id": 400,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565943, "dur": 23,
+    "args": {
+       "External id": 401,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565220, "dur": 804,
+    "args": {
+       "External id": 394,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565202, "dur": 838,
+    "args": {
+       "External id": 393,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986565178, "dur": 882,
+    "args": {
+       "External id": 392,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566154, "dur": 76,
+    "args": {
+       "External id": 404,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [5, 512, 7, 7]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566139, "dur": 116,
+    "args": {
+       "External id": 403,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566111, "dur": 171,
+    "args": {
+       "External id": 402,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 61
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566480, "dur": 101,
+    "args": {
+       "External id": 409,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512, 512, 3, 3], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566609, "dur": 39,
+    "args": {
+       "External id": 410,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], []], "Input type": ["float", "GenericList", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566726, "dur": 81,
+    "args": {
+       "External id": 411,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566431, "dur": 670,
+    "args": {
+       "External id": 408,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "GenericList", "GenericList", "GenericList", "Int", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566379, "dur": 746,
+    "args": {
+       "External id": 407,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566365, "dur": 777,
+    "args": {
+       "External id": 406,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986566342, "dur": 816,
+    "args": {
+       "External id": 405,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567220, "dur": 80,
+    "args": {
+       "External id": 412,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["__int64", "__int64", "Int"], "Fwd thread id": 0, "Sequence number": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567637, "dur": 60,
+    "args": {
+       "External id": 417,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567585, "dur": 120,
+    "args": {
+       "External id": 416,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], [], [], []], "Input type": ["float", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567717, "dur": 41,
+    "args": {
+       "External id": 418,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[512], []], "Input type": ["float", "GenericList"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567762, "dur": 42,
+    "args": {
+       "External id": 419,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567825, "dur": 30,
+    "args": {
+       "External id": 420,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567863, "dur": 12,
+    "args": {
+       "External id": 421,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567880, "dur": 12,
+    "args": {
+       "External id": 422,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cudnn_batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567454, "dur": 501,
+    "args": {
+       "External id": 415,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567412, "dur": 560,
+    "args": {
+       "External id": 414,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986567364, "dur": 623,
+    "args": {
+       "External id": 413,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986568011, "dur": 50,
+    "args": {
+       "External id": 423,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [5, 512, 7, 7], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 64
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 3672, "tid": 43344,
+    "ts": 1647025986568152, "dur": 90,
+    "args": {
+       "External id": 426,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [5, 512, 7, 7]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986568107, "dur": 144,
+    "args": {
+       "External id": 425,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 3672, "tid": 43344,
+    "ts": 1647025986568089, "dur": 175,
+    "args": {
+       "External id": 424,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 65
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 3672, "tid": 43344,
+    "ts": 1647025986575747, "dur": 5330,
+    "args": {
+       "External id": 428,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], [], [], []], "Input type": ["float", "GenericList", "Bool", ""], "Fwd thread id": 0, "Sequence number": 66
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::adaptive_avg_pool2d", "pid": 3672, "tid": 43344,
+    "ts": 1647025986574805, "dur": 6288,
+    "args": {
+       "External id": 427,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 7, 7], []], "Input type": ["float", "GenericList"], "Fwd thread id": 0, "Sequence number": 66
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_reshape_alias", "pid": 3672, "tid": 43344,
+    "ts": 1647025986583986, "dur": 2740,
+    "args": {
+       "External id": 430,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 1, 1], [], []], "Input type": ["float", "GenericList", "GenericList"], "Fwd thread id": 0, "Sequence number": 67
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::flatten", "pid": 3672, "tid": 43344,
+    "ts": 1647025986583520, "dur": 3224,
+    "args": {
+       "External id": 429,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512, 1, 1], [], []], "Input type": ["float", "Int", "Int"], "Fwd thread id": 0, "Sequence number": 67
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 3672, "tid": 43344,
+    "ts": 1647025986594381, "dur": 55,
+    "args": {
+       "External id": 434,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000, 512], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::transpose", "pid": 3672, "tid": 43344,
+    "ts": 1647025986593231, "dur": 1226,
+    "args": {
+       "External id": 433,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000, 512], [], []], "Input type": ["float", "Int", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::t", "pid": 3672, "tid": 43344,
+    "ts": 1647025986589638, "dur": 4837,
+    "args": {
+       "External id": 432,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000, 512]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 68
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 3672, "tid": 43344,
+    "ts": 1647025986597721, "dur": 56,
+    "args": {
+       "External id": 437,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::expand", "pid": 3672, "tid": 43344,
+    "ts": 1647025986597391, "dur": 422,
+    "args": {
+       "External id": 436,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000], [], []], "Input type": ["float", "GenericList", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::addmm", "pid": 3672, "tid": 43344,
+    "ts": 1647025986594703, "dur": 2286697,
+    "args": {
+       "External id": 435,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1000], [5, 512], [512, 1000], [], []], "Input type": ["float", "float", "float", "Int", "Int"], "Fwd thread id": 0, "Sequence number": 69
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::linear", "pid": 3672, "tid": 43344,
+    "ts": 1647025986587999, "dur": 2293421,
+    "args": {
+       "External id": 431,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[5, 512], [1000, 512], [1000]], "Input type": ["float", "float", "float"], "Fwd thread id": 0, "Sequence number": 68
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "model_inference", "pid": 3672, "tid": 43344,
+    "ts": 1647025982222505, "dur": 6664835,
+    "args": {
+       "External id": 4,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0
+       
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1647025977860983, "pid": 3672, "tid": 43344,
+    "args": {
+      "name": "thread 43344 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1647025977860983, "pid": 3672, "tid": 43344,
+    "args": {
+      "sort_index": 43344
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 1647025977860983, "dur": 11039434,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1647025977860983,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 1647025977860983
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 1647025988906737
+  }
+]}
