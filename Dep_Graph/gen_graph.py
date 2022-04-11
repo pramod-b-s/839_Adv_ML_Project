@@ -33,12 +33,14 @@ def printNodes(_nodeList):
 f = open('trace.json')
 data = json.load(f)
 nodeList = []
+# thr_graph = {}
 dep_graph = nx.Graph()
  
 for proc in data['traceEvents']:
     if 'cat' in proc:
         new_node = graphNode()
         new_node.construct_node(proc)
+        # thr_graph[proc['tid']].append(new_node)
         nodeList.append(new_node)
         dep_graph.add_node(new_node)
 
@@ -47,9 +49,24 @@ f.close()
 nodeList.sort(key = lambda proc: proc.proc_ts)
 printNodes(nodeList)
 
+## Time-dependency
+# for nd_1 in nodeList:
+#     for nd_2 in nodeList:
+#         if (nd_1.proc_ts + nd_1.proc_dur >= nd_2.proc_ts) and (nd_2.proc_ts <= nd_1.proc_ts):
+#             dep_graph.add_edge(nd_1, nd_2)
+
+## CPU jobs in same thread dependency
 for nd_1 in nodeList:
     for nd_2 in nodeList:
-        if (nd_1.proc_ts + nd_1.proc_dur >= nd_2.proc_ts) and (nd_2.proc_ts <= nd_1.proc_ts):
+        if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
+            and (nd_1.proc_type == 'cpu') and (nd_1.proc_ts == nd_2.proc_ts)):
+            dep_graph.add_edge(nd_1, nd_2)
+
+## GPU jobs in same thread dependency
+for nd_1 in nodeList:
+    for nd_2 in nodeList:
+        if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
+            and (nd_1.proc_type == 'gpu') and (nd_1.proc_ts == nd_2.proc_ts)):
             dep_graph.add_edge(nd_1, nd_2)
 
 nx.draw(dep_graph)
