@@ -1,9 +1,7 @@
-from cProfile import label
-from http.client import NETWORK_AUTHENTICATION_REQUIRED
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
-from string import ascii_lowercase 
+
 
 class graphNode:
     proc_type = 'cpu'
@@ -39,16 +37,16 @@ def pairwise(iterable):
 f = open('trace.json')
 data = json.load(f)
 nodeList = []
-dep_graph = nx.Graph()
+dep_graph = nx.DiGraph()
 labelDict = {}
+seenNodesCpu = {}
+seenNodesGpu = {}
 counter = 1
- 
+
 for proc in data['traceEvents']:
-    if (('cat' in proc)): # and (proc['ts'] in range(1647025986525965, 1647025986529065))):
-        # labelDict[str("Node" + str(counter))] = str(proc['name'])
+    if (('cat' in proc) and (proc['ts'] in range(1647025986525965, 1647025986559065))):
         new_node = graphNode()
         new_node.construct_node(proc)
-        # thr_graph[proc['tid']].append(new_node)
         nodeList.append(new_node)
         dep_graph.add_node(new_node)
         counter = counter + 1        
@@ -59,21 +57,39 @@ for node in dep_graph.nodes():
 f.close()
 
 nodeList.sort(key = lambda proc: proc.proc_ts)
-printNodes(nodeList)
+# printNodes(nodeList)
 
 ## CPU jobs in same thread dependency
-for nd_1, nd_2 in pairwise(nodeList):
-    if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
-        and (nd_1.proc_type == 'cpu_op') and (nd_2.proc_ts >= nd_1.proc_ts + nd_1.proc_dur)):
-        dep_graph.add_edge(nd_1, nd_2)
+for i in range(len(nodeList) - 2):
+    for j in range(i + 1, len(nodeList) - 1):
+        nd_1 = nodeList[i]
+        nd_2 = nodeList[j]
+
+        if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
+            and (nd_1.proc_type == 'cpu_op') and ((nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur) or
+            (nd_2.proc_ts <= nd_1.proc_ts + nd_1.proc_dur)) and (nd_1 not in seenNodesCpu) 
+            and (nodeList.index(nd_2) > nodeList.index(nd_1))):
+            if (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur):
+                seenNodesCpu[nd_1] = True
+            dep_graph.add_edge(nd_1, nd_2)
+
 
 ## GPU jobs in same thread dependency
-for nd_1, nd_2 in pairwise(nodeList):
-    if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
-        and (nd_1.proc_type == 'gpu_op') and (nd_2.proc_ts >= nd_1.proc_ts + nd_1.proc_dur)):
-        dep_graph.add_edge(nd_1, nd_2)
+for i in range(len(nodeList) - 2):
+    for j in range(i + 1, len(nodeList) - 1):
+        nd_1 = nodeList[i]
+        nd_2 = nodeList[j]
+        
+        if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
+            and (nd_1.proc_type == 'gpu_op') and ((nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur) or
+            (nd_2.proc_ts <= nd_1.proc_ts + nd_1.proc_dur)) and (nd_1 not in seenNodesGpu) 
+            and (nodeList.index(nd_2) > nodeList.index(nd_1))):
+            if (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur):
+                seenNodesGpu[nd_1] = True
+            dep_graph.add_edge(nd_1, nd_2)
 
 
 # H = nx.relabel_nodes(G, mapping)
 nx.draw(dep_graph, with_labels = True, labels = labelDict)
+print(nx.dag_longest_path_length(dep_graph))
 plt.show()
