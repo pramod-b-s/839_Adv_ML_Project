@@ -1,1 +1,5 @@
-# 839_Adv_ML_Project
+# CS839 Advanced ML Project
+
+This project is intended to implement and, if possible, enhance the way profiling is done in Daydream. We intend to make software profilers better aware of the ML workloads being profiled. This would help in getting an accurate profile trace for ML workloads and present a clearer picture about how an optimization would affect the model performance. Towards this end, we plan to start with generating a dependency graph based on system profile traces gathered during a simulated execution of a DNN task. We plan to study this graph further and explore the possibility of suggesting optimizations to the DNN model using this graph as the input.       
+
+Our goal is also to focus on modeling the suitable optimizations for the given DNN model. We have studied such optimization techniques which focus on both the hardware as well as the communication aspect during this course. We aim to generate the dependency graph for some of these optimizations and glean the impact of these optimizations from the graph.
