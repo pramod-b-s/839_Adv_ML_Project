@@ -11,10 +11,12 @@ class graphNode:
     proc_tid = 0
     proc_ts = 0
     proc_dur = 0
+    sim_ref = 0
 
     def _print_node(self):
         print(' Type: ', self.proc_type, ' Ph: ', self.proc_ph, ' Name: ', self.proc_name, ' PID: ', self.proc_pid,
-        ' TID: ', self.proc_tid, ' Timestamp: ', self.proc_ts, ' Duration: ', self.proc_dur)
+        ' TID: ', self.proc_tid, ' Timestamp: ', self.proc_ts, ' Duration: ', self.proc_dur, 'Ref: ', self.sim_ref)
+
     
     def construct_node(self, proc):
         self.proc_ph = proc['ph']
@@ -66,8 +68,8 @@ def construct_graph(traceFile):
     # printNodes(nodeList)
 
     ## CPU jobs in same thread dependency
-    for i in range(len(nodeList) - 2):
-        for j in range(i + 1, len(nodeList) - 1):
+    for i in range(len(nodeList)):
+        for j in range(i + 1, len(nodeList)):
             nd_1 = nodeList[i]
             nd_2 = nodeList[j]
 
@@ -80,8 +82,8 @@ def construct_graph(traceFile):
 
 
     ## GPU jobs in same thread dependency
-    for i in range(len(nodeList) - 2):
-        for j in range(i + 1, len(nodeList) - 1):
+    for i in range(len(nodeList)):
+        for j in range(i + 1, len(nodeList)):
             nd_1 = nodeList[i]
             nd_2 = nodeList[j]
 
