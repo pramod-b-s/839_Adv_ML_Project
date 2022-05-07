@@ -32,8 +32,8 @@ def main():
             print("Applied FP transformations")            
 
         elif (ch == "4"):
-            dep_graph = simulate_graph.transform_amp(dep_graph)
-            print("Simulated graph with FP Txs")
+            new_iter_time = simulate_graph.transform_amp(dep_graph)
+            print("Simulated graph with FP Txs has iteration time: ", new_iter_time)
 
         elif (ch == "5"):
             break

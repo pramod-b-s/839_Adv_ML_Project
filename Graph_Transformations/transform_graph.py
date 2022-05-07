@@ -1,8 +1,6 @@
 import json
 
 
-tasks = []
-
 def insert_task(traceFile):
     f = open(traceFile)
     data = json.load(f)
@@ -42,7 +40,7 @@ def select_task_amp(traceFile):
         json.dump(data, outfile)
 
 
-def select_task_gpu(traceFile):
+'''def select_task_gpu(traceFile):
     f = open(traceFile)
     data = json.load(f)
     if (len(tasks) == 0):
@@ -51,24 +49,4 @@ def select_task_gpu(traceFile):
         dataF = tasks
 
     tasks = [d for d in dataF if d['cat'] == 'gpu_op']
-
-
-def clear_filters():
-    tasks = []
-
-
-def apply_filters(traceFile):
-    f = open(traceFile)
-    data = json.load(f)
-    # name = input("Enter name of task\n") 
-    name = "aten::empty"
-    match = [d for d in data['traceEvents'] if d['name'] != name]
-    
-    with open(traceFile, 'w') as outfile:
-        json.dump(match, outfile)
-
-
-def view_task():
-    print("Current task selection\n")
-    print(tasks)
-
+'''
