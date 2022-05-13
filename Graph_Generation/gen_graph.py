@@ -1,7 +1,13 @@
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
+import pickle
+import os
 
+from pathlib import Path
+
+
+CPU_FREQ = 2400000000
 
 class graphNode:
     proc_type = 'cpu'
@@ -12,6 +18,7 @@ class graphNode:
     proc_ts = 0
     proc_dur = 0
     sim_ref = 0
+    sim_start = 0
     proc_args = {}
 
     def _print_node(self):
@@ -26,10 +33,10 @@ class graphNode:
         self.proc_name = proc['name']
         self.proc_pid = proc['pid']
         self.proc_tid = proc['tid']
-        self.proc_ts = proc['ts']
+        self.proc_ts = proc['ts']        
         
         if "dur" in proc:
-            self.proc_dur = proc['dur']
+            self.proc_dur = (proc['dur']) / 1000
         else:
             self.proc_dur = 0
         
@@ -58,6 +65,14 @@ def display_graph(dep_graph, labelDict):
 
 def construct_graph(traceFile):
     f = open(traceFile)
+    fname = "graph_" + str(os.path.splitext(traceFile)[0]) + ".gr"
+    my_file = Path(fname)
+
+    if my_file.is_file():        
+        with open(fname, 'rb') as f:
+            dep_graph = pickle.load(f)
+        return dep_graph        
+
     data = json.load(f)
     nodeList = []
     dep_graph = nx.DiGraph()
@@ -65,34 +80,41 @@ def construct_graph(traceFile):
     seenNodesGpu = {}
     seenNodesComm = {}
     counter = 1
+    catDict = {'async_gpu', 'Kernel', 'cpu_op', 'Runtime'}
 
     for proc in data['traceEvents']:
-        if (('cat' in proc)):
+        if (('cat' in proc) and (proc['cat'] in catDict)):
             new_node = graphNode()
             new_node.construct_node(proc)
-            nodeList.append(new_node)
-            dep_graph.add_node(new_node)
-            counter = counter + 1        
-
+            nodeList.append(new_node)            
+            counter = counter + 1             
+    
     f.close()
 
     nodeList.sort(key = lambda proc: proc.proc_ts)
-    # printNodes(nodeList)
+    baseCycle = nodeList[0].proc_ts
+    
+    for node in nodeList:
+        node.proc_ts = ((node.proc_ts - baseCycle) / CPU_FREQ) * 1000
+        dep_graph.add_node(node)
 
+    
     ## CPU jobs in same thread dependency
     for i in range(len(nodeList) - 1):
         for j in range(i + 1, len(nodeList)):
             nd_1 = nodeList[i]
             nd_2 = nodeList[j]
 
-            if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
-                and (nd_1.proc_type == 'cpu_op') and ((nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur))
-                and (nd_1 not in seenNodesCpu) and (nodeList.index(nd_2) > nodeList.index(nd_1))
-                and (("gloo" not in nd_1.proc_name) and ("gloo" not in nd_2.proc_name))):
-                if (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur):
-                    seenNodesCpu[nd_1] = True
-
+            if ((nd_1 not in seenNodesCpu) and (nd_1.proc_type == nd_2.proc_type) 
+                and (nd_1.proc_tid == nd_2.proc_tid) and 
+                ((nd_1.proc_type == 'cpu_op') or (nd_1.proc_type == 'Runtime')) 
+                and (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur)
+                # and (nodeList.index(nd_2) > nodeList.index(nd_1))
+                and (("gloo" not in nd_1.proc_name) and ("gloo" not in nd_2.proc_name))
+                ):
+                seenNodesCpu[nd_1] = True
                 dep_graph.add_edge(nd_1, nd_2)
+                break
 
 
     ## GPU jobs in same thread dependency
@@ -101,14 +123,16 @@ def construct_graph(traceFile):
             nd_1 = nodeList[i]
             nd_2 = nodeList[j]
 
-            if ((nd_1.proc_type == nd_2.proc_type) and (nd_1.proc_tid == nd_2.proc_tid) 
-                and (nd_1.proc_type == 'gpu_op') and ((nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur)) 
-                and (nd_1 not in seenNodesGpu) and (nodeList.index(nd_2) > nodeList.index(nd_1))
-                and (("gloo" not in nd_1.proc_name) and ("gloo" not in nd_2.proc_name))):
-                if (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur):
-                    seenNodesGpu[nd_1] = True
-
+            if ((nd_1 not in seenNodesGpu) and (nd_1.proc_type == nd_2.proc_type) 
+                and (nd_1.proc_type == 'Kernel') and (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur) 
+                and (nd_1.proc_args["stream"] == nd_2.proc_args["stream"]) 
+                # and (nodeList.index(nd_2) > nodeList.index(nd_1))
+                # and (("gloo" not in nd_1.proc_name) and ("gloo" not in nd_2.proc_name))
+                ):
+                seenNodesGpu[nd_1] = True
                 dep_graph.add_edge(nd_1, nd_2)
+                # print('Added GPU dep')
+                break
 
 
     ## Correlation from CUDA APIs to GPU kernels
@@ -135,6 +159,7 @@ def construct_graph(traceFile):
         elif (nd_1.proc_name == "Kernel"):
             for j in range(len(tmpAsyncNodeList)):
                 dep_graph.add_edge(tmpAsyncNodeList[j], nd_1)
+                # print('Added CUDA API dep')
 
 
     ## Dependency between communication and CPU jobs
@@ -143,12 +168,10 @@ def construct_graph(traceFile):
             nd_1 = nodeList[i]
             nd_2 = nodeList[j]
 
-            if (((nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur) or (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur))
-                and (nd_2 not in seenNodesComm) and (("gpu" not in nd_1.proc_name) and ("gloo" not in nd_1.proc_name) 
+            if ((nd_2 not in seenNodesComm) and (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur)
+                and (("gpu" not in nd_1.proc_name) and ("gloo" not in nd_1.proc_name) 
                 and ("gloo" in nd_2.proc_name))):
-                if (nd_2.proc_ts > nd_1.proc_ts + nd_1.proc_dur):
-                    seenNodesComm[nd_2] = True
-                
+                seenNodesComm[nd_2] = True                
                 dep_graph.add_edge(nd_1, nd_2)
 
                 for k in range(i, len(nodeList) - 1):
@@ -161,4 +184,7 @@ def construct_graph(traceFile):
 
     # print(len(nodeList))
     # H = nx.relabel_nodes(G, mapping)
+    # print(max(nodeTime), "  ", min(nodeTime))
+    pickle.dump(dep_graph, open(fname, 'wb'))  
+
     return dep_graph

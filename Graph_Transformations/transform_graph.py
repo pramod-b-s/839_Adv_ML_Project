@@ -8,7 +8,7 @@ def insert_task(traceFile):
     data.append(inputEle)
     
     with open(traceFile, 'w') as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, indent=4)
 
 
 def delete_task(traceFile):
@@ -22,7 +22,7 @@ def delete_task(traceFile):
             data.pop(i)
     
     with open(traceFile, 'w') as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, indent=4)
 
 
 def select_task_amp(traceFile):
@@ -32,15 +32,16 @@ def select_task_amp(traceFile):
     for gt in data['traceEvents']:
         if (("cat" in gt) and (gt["cat"] == "gpu_op")):
             if (("sgemm" in gt['name']) or ("scudnn" in gt['name'])):
-                gt['dur'] = (gt['dur'] / 3)
+                gt['dur'] = (int(gt['dur']) / 3)
             else:
-                gt['dur'] = (gt['dur'] / 2)
+                gt['dur'] = (int(gt['dur']) / 2)
 
     with open(traceFile, 'w') as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, indent=4)
 
 
-'''def select_task_gpu(traceFile):
+'''
+def select_task_gpu(traceFile):
     f = open(traceFile)
     data = json.load(f)
     if (len(tasks) == 0):
