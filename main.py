@@ -77,7 +77,7 @@ def main():
                     dep_graph = gen_graph.construct_graph(f)
                 end = tm.time()
 
-                print('Average construct time for trace ', f, ' from ', str(100), ' runs ', float(end - start)/int(i))
+                print('Average construct time for trace ', f, ' from ', str(i), ' runs ', float(end - start)/int(i))
                 if os.path.exists(filePath):
                     os.remove(filePath)
 
